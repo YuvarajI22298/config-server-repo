@@ -18,6 +18,12 @@ server:
   port: 8081
   
   
+security:
+  jwt:
+    token:
+      secret-key: JWTSecretKey
+      expire-length: 604800000 
+  
 eureka:
   client:
     register-with-eureka: true
